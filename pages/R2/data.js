@@ -1,4 +1,4 @@
-const Data = [
+export const data = [
   {
     id: 1,
     nombre: "lorem ipsum",
@@ -60,4 +60,3 @@ const Data = [
     ciudad: "Buenos Aires",
   },
 ];
-export default Data;
