@@ -4,7 +4,7 @@ import Data from "./data";
 
 // creamos una constante para referenciar la data del archivo importado.
 // luego utilizamos la funcion .map para traer todos los campos.
-const dataTable = Datagit;
+const dataTable = Data;
 
 const R2 = () => {
   return (
