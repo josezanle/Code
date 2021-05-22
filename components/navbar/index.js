@@ -26,6 +26,7 @@ const Navbar = () => {
       <style jsx>{`
         .navbar {
           width: 100vw;
+          height: 15vh;
           padding: 1em 2em;
           display: flex;
           justify-content: flex-end;
