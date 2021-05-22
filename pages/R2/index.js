@@ -1,6 +1,6 @@
 import Table from "react-bootstrap/Table";
 import Navbar from "../../components/navbar";
-import { data } from "./data";
+import { data } from "../../data/data";
 
 // creamos una constante para referenciar la data del archivo importado.
 // luego utilizamos la funcion .map para traer todos los campos.
