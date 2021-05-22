@@ -14,7 +14,7 @@ export const data = [
     nombre: "lorem ipsum",
     edad: "30",
     especialidad: "Back-End",
-    framework: "Node/Express js",
+    framework: "Express js",
     años_experiencia: "3 años",
     pais: "Argentina",
     ciudad: "Buenos Aires",

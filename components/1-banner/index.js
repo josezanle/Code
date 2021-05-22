@@ -14,6 +14,14 @@ const Banner = () => {
             display: flex;
             align-items: center;
             justify-content: center;
+            background-image: linear-gradient(
+              to top,
+              hsla(203, 20%, 84%, 0.7) 0%,
+              hsla(201, 32%, 91%, 0.7) 100%
+            ),
+              url(/images/banner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
           }
           }
           .text {

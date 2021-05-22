@@ -34,12 +34,11 @@ const MenuBurger = ({ links }) => {
       <style jsx>
         {`
           .menu {
-            width: 400px;
+            width: 100vw;
             height: 100%;
             display: flex;
             flex-flow: column;
-            padding: 0.5em;
-            z-index: 200;
+            padding: 0.5em 0 0.5em 0.5em;
           }
           // ======================================================================
           .top-icons {
@@ -66,8 +65,9 @@ const MenuBurger = ({ links }) => {
           .nav {
             position: absolute;
             top: 0;
+            left: 0;
             right: 0;
-            width: 400px;
+            width: 100vw;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -75,7 +75,7 @@ const MenuBurger = ({ links }) => {
             flex-flow: column;
             background: transparent;
             transition: 0.4s ease-in;
-            transform: translateX(300px);
+            transform: translatey(-300px);
             opacity: 0;
           }
           a {
@@ -84,14 +84,14 @@ const MenuBurger = ({ links }) => {
             transition: 0.3s ease-in;
             color: grey;
             width: 100%;
-            padding-left: 1em;
             text-decoration: none;
+            text-align: center;
           }
           a:hover {
             color: white;
           }
           .spread {
-            transform: translateX(-10px);
+            transform: translatey(-10px);
             opacity: 1;
             background: hsla(0, 0%, 11%, 0.829);
             backdrop-filter: blur(0.5em);

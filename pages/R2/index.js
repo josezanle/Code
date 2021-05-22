@@ -1,6 +1,6 @@
-import Navbar from "../../components/navbar/index";
 import Table from "react-bootstrap/Table";
-import data from "./data";
+import Navbar from "../../components/navbar";
+import { data } from "./data";
 
 // creamos una constante para referenciar la data del archivo importado.
 // luego utilizamos la funcion .map para traer todos los campos.
@@ -43,31 +43,35 @@ const R2 = () => {
 
         <br />
 
-        <Table striped bordered hover>
+        <Table striped bordered hover responsive>
           <thead>
             <tr>
-              <th>Nombre</th>
-              <th>Id</th>
-              <th>Edad</th>
-              <th>Especialidad</th>
-              <th>Framework</th>
-              <th>Años de Experiencia</th>
-              <th>Pais</th>
-              <th>Ciudad</th>
+              <th className="text-center">Nombre</th>
+              <th className="text-center">Id</th>
+              <th className="text-center">Edad</th>
+              <th className="text-center">Especialidad</th>
+              <th className="text-center">Framework</th>
+              <th className="text-center">Años de Experiencia</th>
+              <th className="text-center">Pais</th>
+              <th className="text-center">Ciudad</th>
             </tr>
           </thead>
           {/* si existe la data, hacemos la tabla dinamicamente, sino, no retorna valor. */}
           {dataTable?.map((item, i) => (
             <tbody key={i}>
               <tr>
-                <td>{item.nombre}</td>
-                <td>{item.id}</td>
-                <td>{item.edad}</td>
-                <td>{item.especialidad}</td>
-                <td>{item.framework}</td>
-                <td>{item.años_experiencia}</td>
-                <td>{item.pais}</td>
-                <td>{item.ciudad}</td>
+                <td className="text-center align-middle">{item.nombre}</td>
+                <td className="text-center align-middle">{item.id}</td>
+                <td className="text-center align-middle">{item.edad}</td>
+                <td className="text-center align-middle">
+                  {item.especialidad}
+                </td>
+                <td className="text-center align-middle">{item.framework}</td>
+                <td className="text-center align-middle">
+                  {item.años_experiencia}
+                </td>
+                <td className="text-center align-middle">{item.pais}</td>
+                <td className="text-center align-middle">{item.ciudad}</td>
               </tr>
             </tbody>
           ))}
